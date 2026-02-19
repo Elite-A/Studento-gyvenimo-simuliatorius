@@ -1,2 +1,14 @@
 # Studento-gyvenimo-simuliatorius
-Žaidimas skirtas atvaizduoti ir patirti vidutinio studento dieną, praeiti iššūkius ir pabaigti dieną sėkmingai.
+F.I.L.S. – Student Simulator
+
+„F.I.L.S.“ – tai 3D studento gyvenimo simuliatorius, kuriame žaidėjas patiria vieną, iš pirmo žvilgsnio paprastą, tačiau kupiną iššūkių dieną universitete. Žaidimo centre – studentiška kasdienybė, pateikta su ironija ir sąmoningai išryškintais stereotipais, kurie daugeliui bus atpažįstami.
+
+Pagrindinis žaidėjo tikslas – sėkmingai pasiekti pagrindinę paskaitą („MAIN“). Tačiau šį tikslą apsunkina įvairūs kasdieniai trikdžiai. Žaidėjas turi valdyti veikėjo būsenas, tarp jų – hidratacijos lygį. Jei jis per žemas, reikia atsigerti, jei per aukštas – būtina rasti veikiantį tualetą. Kadangi dalis infrastruktūros neveikia, sprendimų priėmimas tampa kritiškai svarbus – nesėkmė gali baigtis žaidimo pabaiga.
+
+Aplinkoje juda kiti studentai, kurių reikia vengti dėl veikėjo socialinio nerimo ir bendros prastos savijautos. Taip pat galima apsilankyti „Fresh Spot“ zonoje ar pasirinkti trumpą atsipalaidavimo veiksmą („blow bubbles“). Žaidime integruotas ir krepšinio mini žaidimas, o prieš pat įeinant į paskaitą žaidėjas susiduria su greitos reakcijos iššūkiu (Quick Time Event), kuris tampa paskutiniu patikrinimu prieš pasiekiant pagrindinį tikslą.
+
+Šio projekto tikslas – sukurti pramoginę, bet kartu atpažįstamą patirtį, kuri perteiktų studentiško gyvenimo įtampas, smulkius absurdus ir kasdienius išbandymus. Per šiek tiek hiperbolizuotas situacijas žaidimas leidžia pažvelgti į studentų realybę su lengvu humoru ir padeda suvokti, kad panašius sunkumus patiria daugelis.
+
+Projektas kuriamas naudojant „Unity“ žaidimų variklį, programavimo kalbą C#, o vystymui pasitelkiama VS Code aplinka. 3D modeliai kuriami su „Blender“, garso takeliai – su „FL Studio“, o vizualiniai elementai redaguojami naudojant „Photopea“ ir „Affinity“.
+
+„F.I.L.S.“ išsiskiria tuo, kad yra orientuotas į lietuvišką auditoriją – žaidimo kalba yra lietuvių, o aplinkos įkvėptos realių akademinių erdvių, tokių kaip KTU 11 rūmai. Tai suteikia projektui autentiškumo ir artumo vietinei bendruomenei.
