@@ -59,4 +59,9 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
     }
+    public void Disable()
+    {
+        speed = 0;
+        jumpHeight = 0;
+    }
 }

@@ -677,6 +677,7 @@ RectTransform:
   - {fileID: 215585578}
   - {fileID: 137664426}
   - {fileID: 1206687749}
+  - {fileID: 851692472}
   m_Father: {fileID: 526954626}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1324,6 +1325,85 @@ Transform:
   m_Children: []
   m_Father: {fileID: 887737100}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &851692469
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 851692472}
+  - component: {fileID: 851692471}
+  - component: {fileID: 851692470}
+  m_Layer: 0
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &851692470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851692469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Laikas iki paskaitos: 0'
+--- !u!222 &851692471
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851692469}
+  m_CullTransparentMesh: 1
+--- !u!224 &851692472
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851692469}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 382505530}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 200}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &887737099
 GameObject:
   m_ObjectHideFlags: 0
@@ -2029,6 +2109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameOverPicture: {fileID: 0}
   mouseMovement: {fileID: 0}
+  playerMovement: {fileID: 0}
 --- !u!1 &1261750806
 GameObject:
   m_ObjectHideFlags: 0
@@ -2890,6 +2971,7 @@ GameObject:
   - component: {fileID: 1593125173}
   - component: {fileID: 1593125174}
   - component: {fileID: 1593125175}
+  - component: {fileID: 1593125176}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2906,7 +2988,7 @@ Transform:
   m_GameObject: {fileID: 1593125166}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9987962, z: -0, w: -0.04905285}
-  m_LocalPosition: {x: 2, y: 2.79, z: 44.6}
+  m_LocalPosition: {x: 2, y: 2.79, z: 51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2974,7 +3056,7 @@ MonoBehaviour:
   groundDistance: 0.4
   groundMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!135 &1593125171
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3055,6 +3137,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameOverPicture: {fileID: 1206687748}
   mouseMovement: {fileID: 1593125169}
+  playerMovement: {fileID: 1593125170}
+--- !u!114 &1593125176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593125166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be740ed8fec8e7a4eb3d63563118fecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOver: {fileID: 1593125175}
+  timeOutput: {fileID: 851692470}
+  time: 5
 --- !u!1 &1897135617
 GameObject:
   m_ObjectHideFlags: 0
