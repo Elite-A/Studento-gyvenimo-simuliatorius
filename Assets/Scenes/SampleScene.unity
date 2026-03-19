@@ -2028,6 +2028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameOverPicture: {fileID: 0}
+  mouseMovement: {fileID: 0}
 --- !u!1 &1261750806
 GameObject:
   m_ObjectHideFlags: 0
@@ -2967,7 +2968,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1593125168}
   speed: 12
-  gravity: -19.62
+  gravity: -30
   jumpHeight: 3
   groundCheck: {fileID: 966069971}
   groundDistance: 0.4
@@ -3053,6 +3054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameOverPicture: {fileID: 1206687748}
+  mouseMovement: {fileID: 1593125169}
 --- !u!1 &1897135617
 GameObject:
   m_ObjectHideFlags: 0
