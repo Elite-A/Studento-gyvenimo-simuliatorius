@@ -1,9 +1,10 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
-    public GameOver gameOver;
+ 
     public Text timeOutput;
     public float time = 60;
  
@@ -14,7 +15,7 @@ public class Timer : MonoBehaviour
         time -= Time.deltaTime;
         timeOutput.text = "Laikas iki paskaitos: " + ((int)time).ToString();
         if(time<=1)
-            gameOver.Death();
+            SceneManager.LoadScene("Death");
 
     }
 

@@ -1,8 +1,8 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class StressMeter : MonoBehaviour {
-    public GameOver gameOver;
     public Text stressOutput;
     private double stressMeter=0;
     public int changeSpeed=50;
@@ -11,7 +11,7 @@ public class StressMeter : MonoBehaviour {
     {
 
         if (stressMeter >= 100)
-            gameOver.Death();
+            SceneManager.LoadScene("Death");
         else
             stressMeter += changeSpeed * Time.deltaTime;
         stressOutput.text = "Stresas: " + ((int)stressMeter).ToString();

@@ -24,7 +24,13 @@ public class Menu : MonoBehaviour
     
     private void OnWalkInFinished(VideoPlayer player)
     {
-        SceneManager.LoadSceneAsync("Main");
+        UnityEditor.EditorApplication.isPlaying = false;
+        //Application.Quit();
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 
 }
