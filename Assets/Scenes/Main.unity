@@ -2954,7 +2954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stressOutput: {fileID: 215585581}
-  changeSpeed: 80
+  changeSpeed: 10
 --- !u!114 &1593125174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3279,15 +3279,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 970663171277229320, guid: 9054a81e55895a04b96ea23fded11b65, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5384409
+      value: -0.21511866
       objectReference: {fileID: 0}
     - target: {fileID: 970663171277229320, guid: 9054a81e55895a04b96ea23fded11b65, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 970663171277229320, guid: 9054a81e55895a04b96ea23fded11b65, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.84266335
+      value: 0.97658795
       objectReference: {fileID: 0}
     - target: {fileID: 970663171277229320, guid: 9054a81e55895a04b96ea23fded11b65, type: 3}
       propertyPath: m_LocalRotation.z
@@ -3299,7 +3299,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 970663171277229320, guid: 9054a81e55895a04b96ea23fded11b65, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 114.845
+      value: 204.845
       objectReference: {fileID: 0}
     - target: {fileID: 970663171277229320, guid: 9054a81e55895a04b96ea23fded11b65, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -3328,8 +3328,32 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 446891752657835954, guid: 9054a81e55895a04b96ea23fded11b65, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2105644321}
   m_SourcePrefab: {fileID: 100100000, guid: 9054a81e55895a04b96ea23fded11b65, type: 3}
+--- !u!1 &2105644320 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 446891752657835954, guid: 9054a81e55895a04b96ea23fded11b65, type: 3}
+  m_PrefabInstance: {fileID: 1997966448}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2105644321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105644320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851f5abd3d00d3f4a95d637c8050a4d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+  walkCounter: 0
+  waitCounter: 0
+  isWalking: 0
 --- !u!1 &2136733278
 GameObject:
   m_ObjectHideFlags: 0

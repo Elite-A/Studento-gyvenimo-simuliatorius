@@ -564,6 +564,7 @@ MonoBehaviour:
   currentScene: {fileID: 333906966}
   walkIn: {fileID: 1745891659}
   Studentauti: {fileID: 991427738}
+  "I\u0161stoti": {fileID: 1700247712}
 --- !u!1 &991427738
 GameObject:
   m_ObjectHideFlags: 0

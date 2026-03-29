@@ -7,15 +7,17 @@ public class Menu : MonoBehaviour
    public VideoPlayer currentScene;
     public VideoPlayer walkIn;
     public GameObject Studentauti;
+    public GameObject Iðstoti;
 
- 
+
 
     public void LoadOpeningScene()
     {
         currentScene.Stop();
         Studentauti.SetActive(false);
+        Iðstoti.SetActive(false);
 
-   
+
         walkIn.Play();
 
         
@@ -24,13 +26,13 @@ public class Menu : MonoBehaviour
     
     private void OnWalkInFinished(VideoPlayer player)
     {
-        UnityEditor.EditorApplication.isPlaying = false;
-        //Application.Quit();
+        SceneManager.LoadScene("Main");
     }
 
     public void Quit()
     {
-        Application.Quit();
+        UnityEditor.EditorApplication.isPlaying = false;
+        //Application.Quit();
     }
 
 }
