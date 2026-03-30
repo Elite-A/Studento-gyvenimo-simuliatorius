@@ -1,10 +1,10 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
 public class WaterMeter: MonoBehaviour
 {
-    public GameOver gameOver;
     public Text waterOutput;
     private double waterMeter = 50;
     public int changeSpeed = 1;
@@ -12,7 +12,7 @@ public class WaterMeter: MonoBehaviour
     private void Update()
     {
         if (waterMeter <= 0)
-            gameOver.Death();
+            SceneManager.LoadScene("Death");
         else
             waterMeter -= (changeSpeed * Time.deltaTime)/3;
         waterOutput.text = "Vanduo: " + ((int)waterMeter).ToString();
@@ -21,7 +21,8 @@ public class WaterMeter: MonoBehaviour
     {
 
         if (waterMeter >= 100)
-            gameOver.Death();
+            SceneManager.LoadScene("Death");
+
         else
             waterMeter += changeSpeed * Time.deltaTime;
         waterOutput.text = "Vanduo: " + ((int)waterMeter).ToString();
