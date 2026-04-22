@@ -10,7 +10,6 @@ public class Menu : MonoBehaviour
     public GameObject Iðstoti;
 
 
-
     public void LoadOpeningScene()
     {
         currentScene.Stop();

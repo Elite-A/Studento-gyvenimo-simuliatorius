@@ -42,9 +42,9 @@ public class MouseMovement : MonoBehaviour
         transform.localRotation = Quaternion.Euler(xRotation, YRotation, 0f);
 
     }
-    public void Disable()
+    void OnDisable()
     {
         Cursor.lockState = CursorLockMode.None;
-        mouseSensitivity = 0f;
+        Cursor.visible = true;
     }
 }

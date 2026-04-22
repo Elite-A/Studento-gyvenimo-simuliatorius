@@ -2,6 +2,7 @@
 using UnityEngine.Video;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
@@ -88,4 +89,6 @@ public class MenuController : MonoBehaviour
         c.a = alpha;
         fadeImage.color = c;
     }
+
+    
 }

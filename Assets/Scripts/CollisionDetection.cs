@@ -35,9 +35,15 @@ public class CollisionDetection : MonoBehaviour
                 smokingBreaks++;
 
                 stressMeter.DecreaseStress();
-                if (smokingBreaks == 50)
+                if (smokingBreaks == 100)
                     SceneManager.LoadScene("Death");
             }
         }
+    }
+
+    public void Update()
+    {
+        if (Input.GetKey(KeyCode.P))
+            SceneManager.LoadScene("Pause");
     }
 }
