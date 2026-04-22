@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollisionDetection : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class CollisionDetection : MonoBehaviour
    
     public StressMeter stressMeter;
     public WaterMeter waterMeter;
+    private int smokingBreaks;
 
 
     private void OnTriggerStay(Collider other)
@@ -30,7 +32,11 @@ public class CollisionDetection : MonoBehaviour
             Debug.Log("Èiuvelis lauke");
             if (Input.GetKey(KeyCode.K))
             {
+                smokingBreaks++;
+
                 stressMeter.DecreaseStress();
+                if (smokingBreaks == 50)
+                    SceneManager.LoadScene("Death");
             }
         }
     }
