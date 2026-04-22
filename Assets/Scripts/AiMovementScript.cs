@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class AI_Movement : MonoBehaviour
 {
 
-   // Animator animator;
+   Animator animator;
 
     //public so u can change it from inspector
     public float moveSpeed = 0.2f;
@@ -29,11 +29,11 @@ public class AI_Movement : MonoBehaviour
     void Start()
     {
         //take previously created animator
-        //animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
 
         //So that all the prefabs don't move/stop at the same time
-        walkTime = Random.Range(3, 6);
-        waitTime = Random.Range(10, 15);
+        walkTime = Random.Range(3,7);
+        waitTime = Random.Range(0,4);
 
 
         waitCounter = waitTime;
@@ -48,7 +48,7 @@ public class AI_Movement : MonoBehaviour
         if (isWalking)
         {
             //say its running
-            //animator.SetBool("isWalking", true);
+            animator.SetBool("isWalking", true);
 
             walkCounter -= Time.deltaTime;
 
@@ -79,7 +79,7 @@ public class AI_Movement : MonoBehaviour
                 isWalking = false;
                 //stop movement
                 transform.position = stopPosition;
-               // animator.SetBool("isWalking", false);
+               animator.SetBool("isWalking", false);
                 //reset the waitCounter
                 waitCounter = waitTime;
             }
