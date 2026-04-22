@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
+<<<<<<< Updated upstream:intro/ProjectSettings/TagManager.asset
   tags: []
+=======
+  tags:
+  - NPC
+  - Water
+  - Outside
+  - Basketball
+>>>>>>> Stashed changes:ProjectSettings/TagManager.asset
   layers:
   - Default
   - TransparentFX
