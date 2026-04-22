@@ -56,22 +56,20 @@ public class AI_Movement : MonoBehaviour
             //we check which direction we randomly chose
             {
                 case 0:
-                    //spin our model
-                    transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
-                    //and add our movement speed*double every time we update
-                    transform.position += transform.forward * moveSpeed * Time.deltaTime;
+                    transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+                    transform.position += Vector3.back * moveSpeed * Time.deltaTime; 
                     break;
                 case 1:
-                    transform.localRotation = Quaternion.Euler(0f, 90, 0f);
-                    transform.position += transform.forward * moveSpeed * Time.deltaTime;
+                    transform.rotation = Quaternion.Euler(0f, 90f, 0f);
+                    transform.position += Vector3.left * moveSpeed * Time.deltaTime; 
                     break;
                 case 2:
-                    transform.localRotation = Quaternion.Euler(0f, -90, 0f);
-                    transform.position += transform.forward * moveSpeed * Time.deltaTime;
+                    transform.rotation = Quaternion.Euler(0f, -90f, 0f);
+                    transform.position += Vector3.right * moveSpeed * Time.deltaTime; 
                     break;
                 case 3:
-                    transform.localRotation = Quaternion.Euler(0f, 180, 0f);
-                    transform.position += transform.forward * moveSpeed * Time.deltaTime;
+                    transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+                    transform.position += Vector3.forward * moveSpeed * Time.deltaTime; 
                     break;
             }
 
