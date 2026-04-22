@@ -565,8 +565,7 @@ MonoBehaviour:
   currentScene: {fileID: 333906966}
   walkIn: {fileID: 1745891659}
   Studentauti: {fileID: 991427738}
-  "I\u0161stoti": {fileID: 1700247712}
-  MouseMovement: {fileID: 0}
+  "I\xF0stoti": {fileID: 1700247712}
 --- !u!1 &895508923
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,7 +600,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 349.39734, y: 165.74261}
+  m_AnchoredPosition: {x: 657, y: 259}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &895508925
@@ -908,7 +907,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Isstoti
+  m_text: "I\u0161stoti"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
