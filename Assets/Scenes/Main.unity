@@ -7069,7 +7069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0db29a2230a0e4f4997e209200fbc303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 200
+  mouseSensitivity: 150
 --- !u!114 &1593125170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7083,7 +7083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1593125168}
-  speed: 12
+  speed: 8
   gravity: -30
   jumpHeight: 3
   groundCheck: {fileID: 966069971}
