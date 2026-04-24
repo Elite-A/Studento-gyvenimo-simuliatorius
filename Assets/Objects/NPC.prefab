@@ -10,23 +10,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 742a32e3c4f65d64abd56ca6ae9007ed, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.8
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 742a32e3c4f65d64abd56ca6ae9007ed, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.8
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 742a32e3c4f65d64abd56ca6ae9007ed, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.8
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 742a32e3c4f65d64abd56ca6ae9007ed, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.092
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 742a32e3c4f65d64abd56ca6ae9007ed, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.89
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 742a32e3c4f65d64abd56ca6ae9007ed, type: 3}
       propertyPath: m_LocalPosition.z
@@ -161,7 +161,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057356146444295059}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
