@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 public class CollisionDetection : MonoBehaviour
 {
     public GameObject  Player;
+    public GameObject PauseMenu;
+    public MouseMovement mouseMovement;
 
    
     public StressMeter stressMeter;
@@ -42,8 +44,30 @@ public class CollisionDetection : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKey(KeyCode.P))
-            SceneManager.LoadScene("Pause");
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            bool isPaused = PauseMenu.activeSelf;
+
+            if (isPaused)
+            {
+                // Atpausuojam
+                PauseMenu.SetActive(false);
+                Time.timeScale = 1f;
+                mouseMovement.enabled = true;
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
+            else
+            {
+                // Pausuojam
+                PauseMenu.SetActive(true);
+                Time.timeScale = 0f;
+                mouseMovement.enabled = false;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
+        }
+
         if (isOutside && Input.GetKeyDown(KeyCode.K))
         {
             Debug.Log("Èiuvelis lauke");
@@ -65,6 +89,19 @@ public class CollisionDetection : MonoBehaviour
                
             
         }
+    }
+    public void Continue()
+    {
+        PauseMenu.SetActive(false);
+        Time.timeScale = 1f;
+        mouseMovement.enabled = true;
+
+
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }
 

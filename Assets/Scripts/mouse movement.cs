@@ -16,6 +16,7 @@ public class MouseMovement : MonoBehaviour
     {
         //Locking the cursor to the middle of the screen and making it invisible
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     /// <summary>
@@ -42,6 +43,16 @@ public class MouseMovement : MonoBehaviour
         transform.localRotation = Quaternion.Euler(xRotation, YRotation, 0f);
 
     }
+    void OnEnable()
+    {
+        // Tik jei þaidimas jau prasidëjo
+        if (Time.frameCount > 0)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+    }
+
     void OnDisable()
     {
         Cursor.lockState = CursorLockMode.None;
