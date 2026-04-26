@@ -20,11 +20,12 @@ public class WaterMeter: MonoBehaviour
     public void IncreaseWater()
     {
 
-        if (waterMeter >= 100)
+        if (waterMeter >= 80)
             SceneManager.LoadScene("Death");
 
         else
-            waterMeter += changeSpeed * Time.deltaTime;
+         
+            waterMeter += 20;
         waterOutput.text = "Vanduo: " + ((int)waterMeter).ToString();
     }
 }

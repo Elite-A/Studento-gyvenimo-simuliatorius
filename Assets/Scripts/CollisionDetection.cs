@@ -11,17 +11,22 @@ public class CollisionDetection : MonoBehaviour
     private int smokingBreaks;
 
     private bool isOutside = false;
+    private bool nearFreshSpot = false;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Outside"))
             isOutside = true;
+        if (other.CompareTag("Water"))
+            nearFreshSpot = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Outside"))
             isOutside = false;
+        if (other.CompareTag("Water"))
+            nearFreshSpot = false;
     }
 
     private void OnTriggerStay(Collider other)
@@ -33,12 +38,6 @@ public class CollisionDetection : MonoBehaviour
             stressMeter.IncreaseStress();   
         }
 
-        if (other.CompareTag("Water"))
-        {
-            Debug.Log("trigerinasi su Vandeniu");
-            waterMeter.IncreaseWater();
-
-        }
     }
 
     public void Update()
@@ -48,14 +47,23 @@ public class CollisionDetection : MonoBehaviour
         if (isOutside && Input.GetKeyDown(KeyCode.K))
         {
             Debug.Log("Èiuvelis lauke");
-            if (Input.GetKey(KeyCode.K))
-            {
+           
                 smokingBreaks++;
 
                 stressMeter.DecreaseStress();
                 if (smokingBreaks >=20)
                     SceneManager.LoadScene("Death");
-            }
+            
+        }
+        if (nearFreshSpot && Input.GetKeyDown(KeyCode.G))
+        {
+            Debug.Log("Geria");
+            
+                smokingBreaks++;
+
+                waterMeter.IncreaseWater();
+               
+            
         }
     }
 }
