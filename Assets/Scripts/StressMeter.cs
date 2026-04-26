@@ -19,9 +19,11 @@ public class StressMeter : MonoBehaviour {
     public void DecreaseStress()
     {
 
-        if (stressMeter > 0)
-            stressMeter -= changeSpeed * Time.deltaTime;
-        stressOutput.text = "Stresas: " + ((int)stressMeter).ToString();
+        if (stressMeter >= 20)
+            stressMeter -= 20;
+        else
+            stressMeter = 0;
+            stressOutput.text = "Stresas: " + ((int)stressMeter).ToString();
     }
 
 
