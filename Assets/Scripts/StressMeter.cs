@@ -11,7 +11,11 @@ public class StressMeter : MonoBehaviour {
     {
 
         if (stressMeter >= 100)
+        {
+            DeathReason.reason = "Nuplikai";
             SceneManager.LoadScene("Death");
+
+        }
         else
             stressMeter += changeSpeed * Time.deltaTime;
         stressOutput.text = "Stresas: " + ((int)stressMeter).ToString();

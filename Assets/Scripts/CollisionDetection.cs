@@ -75,8 +75,11 @@ public class CollisionDetection : MonoBehaviour
                 smokingBreaks++;
 
                 stressMeter.DecreaseStress();
-                if (smokingBreaks >=20)
-                    SceneManager.LoadScene("Death");
+            if (smokingBreaks >= 20)
+            {
+                DeathReason.reason = "Gavai vezi";
+                SceneManager.LoadScene("Death");
+            }
             
         }
         if (nearFreshSpot && Input.GetKeyDown(KeyCode.G))

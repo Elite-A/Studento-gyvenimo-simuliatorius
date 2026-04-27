@@ -69,6 +69,10 @@ PrefabInstance:
       value: NPC
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 742a32e3c4f65d64abd56ca6ae9007ed, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 742a32e3c4f65d64abd56ca6ae9007ed, type: 3}
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}

@@ -12,19 +12,26 @@ public class WaterMeter: MonoBehaviour
     private void Update()
     {
         if (waterMeter <= 0)
+        {
+
+            DeathReason.reason = "Nepakankamai energiako";
             SceneManager.LoadScene("Death");
+        }
         else
-            waterMeter -= (changeSpeed * Time.deltaTime)/3;
+            waterMeter -= (changeSpeed * Time.deltaTime) / 3;
         waterOutput.text = "Vanduo: " + ((int)waterMeter).ToString();
     }
     public void IncreaseWater()
     {
 
         if (waterMeter >= 80)
+        {
             SceneManager.LoadScene("Death");
+            DeathReason.reason = "Per daug energiako";
+        }
 
         else
-         
+
             waterMeter += 20;
         waterOutput.text = "Vanduo: " + ((int)waterMeter).ToString();
     }
