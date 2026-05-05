@@ -2,5 +2,5 @@ using UnityEngine;
 
 public class DeathReason : MonoBehaviour
 {
-    public static string reason = "";
+    public static string reason = "Skola";
 }

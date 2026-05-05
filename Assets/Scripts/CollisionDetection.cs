@@ -6,6 +6,7 @@ public class CollisionDetection : MonoBehaviour
     public GameObject  Player;
     public GameObject PauseMenu;
     public MouseMovement mouseMovement;
+    public Timer timer;
 
    
     public StressMeter stressMeter;
@@ -15,12 +16,31 @@ public class CollisionDetection : MonoBehaviour
     private bool isOutside = false;
     private bool nearFreshSpot = false;
 
+    void Start()
+    {
+
+        PauseMenu.SetActive(false);
+        Time.timeScale = 1f;
+        mouseMovement.enabled = true;
+
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Outside"))
             isOutside = true;
         if (other.CompareTag("Water"))
             nearFreshSpot = true;
+        if (other.CompareTag("Classroom"))
+        {
+            if (timer.time > 0 && timer.time <= 15)
+            {
+                DeathReason.reason = "Spejai i klase!";
+
+
+                SceneManager.LoadScene("Death");
+            }
+
+        }
     }
 
     private void OnTriggerExit(Collider other)

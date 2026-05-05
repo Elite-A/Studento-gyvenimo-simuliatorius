@@ -8,6 +8,8 @@ TagManager:
   - Water
   - Outside
   - Basketball
+  - Clasroom
+  - Classroom
   layers:
   - Default
   - TransparentFX

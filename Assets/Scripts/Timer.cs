@@ -14,8 +14,18 @@ public class Timer : MonoBehaviour
     {
         time -= Time.deltaTime;
         timeOutput.text = "Laikas iki paskaitos: " + ((int)time).ToString();
-        if(time<=1)
-            SceneManager.LoadScene("Death");
+        if(time<=15)
+        {
+            timeOutput.color = Color.red;
+            timeOutput.fontSize = 24;
+            timeOutput.text = "TURI PASIEKTI KLASE PER: " + ((int)time).ToString();
+
+            if (time < 1)
+                SceneManager.LoadScene("Death");
+
+        }
+
+        
 
     }
 
