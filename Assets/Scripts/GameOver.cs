@@ -6,7 +6,6 @@ using System.Xml.Linq;
 
 public class GameOver : MonoBehaviour
 {
-    public TMP_Text deathText;
     public void Restart()
     {
         SceneManager.LoadScene("Main");
@@ -15,10 +14,6 @@ public class GameOver : MonoBehaviour
     public void Menu()
     {
         SceneManager.LoadScene("MainMenu");
-    }
-    private void Start()
-    {
-        deathText.text = DeathReason.reason;
     }
 
 }
