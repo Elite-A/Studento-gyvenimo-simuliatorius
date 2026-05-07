@@ -12,7 +12,7 @@ public class StressMeter : MonoBehaviour {
 
         if (stressMeter >= 100)
         {
-            DeathReason.reason = "Nuplikai";
+            DeathReason.reason = 3;
             SceneManager.LoadScene("Death");
 
         }

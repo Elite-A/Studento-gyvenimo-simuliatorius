@@ -21,8 +21,10 @@ public class Timer : MonoBehaviour
             timeOutput.text = "TURI PASIEKTI KLASE PER: " + ((int)time).ToString();
 
             if (time < 1)
+            {
+                DeathReason.reason = 0;
                 SceneManager.LoadScene("Death");
-
+            }
         }
 
         

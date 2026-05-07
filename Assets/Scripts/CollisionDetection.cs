@@ -34,7 +34,7 @@ public class CollisionDetection : MonoBehaviour
         {
             if (timer.time > 0 && timer.time <= 15)
             {
-                DeathReason.reason = "Spejai i klase!";
+                DeathReason.reason = 4;
 
 
                 SceneManager.LoadScene("Death");
@@ -97,7 +97,7 @@ public class CollisionDetection : MonoBehaviour
                 stressMeter.DecreaseStress();
             if (smokingBreaks >= 20)
             {
-                DeathReason.reason = "Gavai vezi";
+                DeathReason.reason = 5;
                 SceneManager.LoadScene("Death");
             }
             

@@ -14,7 +14,7 @@ public class WaterMeter: MonoBehaviour
         if (waterMeter <= 0)
         {
 
-            DeathReason.reason = "Nepakankamai energiako";
+            DeathReason.reason = 1;
             SceneManager.LoadScene("Death");
         }
         else
@@ -26,8 +26,8 @@ public class WaterMeter: MonoBehaviour
 
         if (waterMeter >= 80)
         {
+            DeathReason.reason = 2;
             SceneManager.LoadScene("Death");
-            DeathReason.reason = "Per daug energiako";
         }
 
         else
