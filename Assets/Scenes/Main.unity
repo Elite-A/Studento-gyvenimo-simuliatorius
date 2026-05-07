@@ -4095,9 +4095,10 @@ GameObject:
   - component: {fileID: 857054852}
   - component: {fileID: 857054851}
   - component: {fileID: 857054853}
+  - component: {fileID: 857054854}
   m_Layer: 0
-  m_Name: Remas.001
-  m_TagString: Untagged
+  m_Name: WinClasroom
+  m_TagString: Classroom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4192,6 +4193,27 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6856358675693881921, guid: 9cc9bcaa11e3472489b4282c118a575b, type: 3}
+--- !u!65 &857054854
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857054849}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.2046356, y: 3.6693614, z: 0.47670937}
+  m_Center: {x: 25.958569, y: 1.8346809, z: -18.820286}
 --- !u!1 &860716930
 GameObject:
   m_ObjectHideFlags: 0
@@ -5220,10 +5242,9 @@ GameObject:
   - component: {fileID: 1036708555}
   - component: {fileID: 1036708554}
   - component: {fileID: 1036708556}
-  - component: {fileID: 1036708557}
   m_Layer: 0
-  m_Name: Win  Clasroom
-  m_TagString: Classroom
+  m_Name: Remas.002
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5318,27 +5339,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5168537880378517824, guid: 9cc9bcaa11e3472489b4282c118a575b, type: 3}
---- !u!65 &1036708557
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1036708552}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 5.26947, y: 3.6693614, z: 0.7091961}
-  m_Center: {x: 43.92061, y: 1.8346809, z: -18.70404}
 --- !u!1 &1058888904
 GameObject:
   m_ObjectHideFlags: 0
@@ -7452,7 +7452,7 @@ Transform:
   m_GameObject: {fileID: 1593125166}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9987962, z: -0, w: -0.04905285}
-  m_LocalPosition: {x: 2, y: 1.33, z: 51}
+  m_LocalPosition: {x: 2, y: 1.33, z: 50.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7573,7 +7573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stressOutput: {fileID: 215585581}
-  changeSpeed: 10
+  changeSpeed: 5
 --- !u!114 &1593125174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7601,7 +7601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeOutput: {fileID: 851692470}
-  time: 40
+  time: 10000
 --- !u!4 &1604418362 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1713305401228198185, guid: 64e2315e31c9b64488e3916b2c970246, type: 3}
@@ -9237,9 +9237,10 @@ GameObject:
   - component: {fileID: 3933177532586790350}
   - component: {fileID: 2913919549702283490}
   - component: {fileID: 3933177532586790351}
+  - component: {fileID: 3933177532586790352}
   m_Layer: 0
   m_Name: Zole.001
-  m_TagString: Untagged
+  m_TagString: Outside
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9996,6 +9997,27 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1657002392441105939, guid: 11b2c53c1ec21f044850239f4930ec62, type: 3}
+--- !u!65 &3933177532586790352
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022995388713376908}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 54.46529, y: 2.391622, z: 15.676483}
+  m_Center: {x: 31.545103, y: 0.8722763, z: -2.8972645}
 --- !u!4 &3985636776487331726
 Transform:
   m_ObjectHideFlags: 0
