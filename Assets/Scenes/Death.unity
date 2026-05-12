@@ -1242,10 +1242,10 @@ MonoBehaviour:
   deathClips:
   - {fileID: 32900000, guid: 08041130be5f74843854e48f3e7a46e8, type: 3}
   - {fileID: 32900000, guid: 9c432276d35b47b48b34c427ee7b1c6d, type: 3}
-  - {fileID: 0}
+  - {fileID: 32900000, guid: 0fb5b57b7f2a4ea4aa3202238097acb0, type: 3}
   - {fileID: 32900000, guid: c0ea6675e5f455044b8cf46727f0e92c, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 32900000, guid: 5c0b816f8294b0a468306e14e20a3de8, type: 3}
+  - {fileID: 32900000, guid: eae727fe5a239d54db44e4d1ee5f6611, type: 3}
   ui: {fileID: 945608751}
 --- !u!4 &2112071001
 Transform:
