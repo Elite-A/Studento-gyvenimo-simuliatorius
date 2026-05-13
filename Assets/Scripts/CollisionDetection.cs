@@ -88,9 +88,9 @@ public class CollisionDetection : MonoBehaviour
             }
         }
 
-        if (isOutside && Input.GetKeyDown(KeyCode.K))
+        if (isOutside && Input.GetKeyDown(KeyCode.R))
         {
-            Debug.Log("Èiuvelis lauke");
+            Debug.Log("Ciuvelis lauke");
            
                 smokingBreaks++;
 
