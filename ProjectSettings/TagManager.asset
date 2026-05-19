@@ -10,6 +10,7 @@ TagManager:
   - Basketball
   - Clasroom
   - Classroom
+  - Wall
   layers:
   - Default
   - TransparentFX
