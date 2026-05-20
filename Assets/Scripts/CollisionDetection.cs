@@ -30,6 +30,12 @@ public class CollisionDetection : MonoBehaviour
             isOutside = true;
         if (other.CompareTag("Water"))
             nearFreshSpot = true;
+        if (other.CompareTag("NPC"))
+        {
+            NPCVoiceLine voiceLine = other.GetComponent<NPCVoiceLine>();
+            if (voiceLine != null)
+                voiceLine.PlayVoiceLine();
+        }
         if (other.CompareTag("Classroom"))
         {
             if (timer.time > 0 && timer.time <= 15)
