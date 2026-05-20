@@ -19,6 +19,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Medis
     second: {fileID: 2100000, guid: 2b94177b1b26de94e8df942605b5d74c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stiklas
+    second: {fileID: 2100000, guid: a83a17842e7535f4483fd8e6c7b74a7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall
+    second: {fileID: 2100000, guid: b1d5cc9953030cc48974c707f73c7e80, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
